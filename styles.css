@@ -1,0 +1,223 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+/* 
+==================MAIN PAGE==================
+ */
+
+ :root {
+     --gray1: rgb(245,245,245);
+     --gray2: rgb(190,190,190);
+ }
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.navbar:first-child {
+    margin-left: 50px;
+}
+
+.navbar:last-child {
+    margin-right: 50px;
+}
+
+.navbar-box {
+    width: 100%;
+    height: 100px;
+    margin: 1px;
+    border: 1px solid red;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.header {
+    position: relative;
+    grid-column: 1 / 5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header-title {
+    position: absolute;
+    top: 25px;
+    height: 100px;
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: gray;
+    border: 1px solid black;
+    margin: auto;
+}
+
+.header-box {
+    width: 100%;
+    border: 3px solid red;
+    height: 650px;
+}
+
+.membership-section {
+    grid-column: 1 / 5;
+    width: 100%;
+    height: 500px;
+    background-color: var(--gray2);
+}
+
+.main {
+    grid-column: 1 / 5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.col-1-2 {
+    grid-column: 1/2;
+}
+
+.col-1-3 {
+    grid-column: 1/3;
+}
+
+.col-1-4 {
+    grid-column: 1/4;
+}
+
+.col-1-5 {
+    grid-column: 1/5;
+}
+
+.col-2-3 {
+    grid-column: 2/3;
+}
+
+.col-3-4 {
+    grid-column: 3/4;
+}
+
+.col-3-5 {
+    grid-column: 3/5;
+}
+
+.col-4-5 {
+    grid-column: 4/5;
+}
+
+.main-article {
+    height: 400px;
+    background-color: var(--gray1);
+    border: 1px solid black;
+}
+
+.main-aside {
+    height: 400px;
+    background-color: gray;
+    border: 1px solid black;
+}
+
+.inclusive-components {
+    height: 400px;
+    background-color: black;
+}
+
+.person {
+    height: 200px;
+    background-color: var(--gray1);
+    border: solid black 1px;
+}
+
+.featured-book {
+    grid-column: 1/5;
+    height: 200px;
+    background-color: gray;
+}
+
+.guides {
+    height: 600px;
+    border: 1px solid black;
+}
+
+.bottom-newsletter {
+    grid-column: 2/4;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    height: 500px;
+    background-color: gray;
+    border: solid black 1px;
+}
+
+.footer {
+    grid-column: 1/5;
+    height: 400px;
+    background-color: var(--gray2);
+    border: 1px solid black;
+}
