@@ -68,10 +68,15 @@ table {
  :root {
      --gray1: rgb(245,245,245);
      --gray2: rgb(190,190,190);
+     font-family: 'Cabin', Helvetica, Arial, sans-serif;
  }
 
+ .header-text {
+    font-family: 'Lobster', Georgia, Times, serif;
+ }
 
-.navbar {
+.navbar, 
+.centered-text {
     display: flex;
     justify-content: center;
     flex-direction: row;
